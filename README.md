@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/age-calculator-app-PkV-_2Ho5N](https://www.frontendmentor.io/solutions/age-calculator-app-PkV-_2Ho5N)
 - Live Site URL: [https://andrecaldeiras.github.io/Age-Calculator-App/dist/](https://andrecaldeiras.github.io/Age-Calculator-App/dist/)
 
 ## My process
