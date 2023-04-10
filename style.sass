@@ -1,0 +1,170 @@
+@import "./_vars.sass"
+    
+@font-face 
+    font-family: "Poppins"
+    src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype")
+    font-weight: $w-light
+    font-style: normal
+
+@font-face 
+    font-family: "Poppins"
+    src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype")
+    font-weight: $w-medium
+    font-style: normal
+
+@font-face 
+    font-family: "Poppins"
+    src: url("../assets/fonts/Poppins-ExtraBold.ttf") format("truetype")
+    font-weight: $w-heavy
+    font-style: normal
+
+// @font-face 
+//     font-family: "Poppins"
+//     src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype")
+//     font-weight: $w-heavy
+//     font-style: italic
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: Poppins
+    background-color: $n-offwhite
+
+main
+    margin: 30% 5%
+
+.card
+    background-color: white
+    display: flex
+    flex-flow: column wrap
+    // align-content: space-around
+    border-radius: 5vw
+    padding: 40px 25px
+    border-bottom-right-radius: 25vw
+    width: 100%
+
+    .card__inputs
+        display: flex
+        flex-flow: row nowrap
+        max-width: 100%
+        gap: 10px
+        margin-bottom: 5%
+
+        .input
+            display: flex
+            flex-flow: column
+            width: calc((100% / 3) - 7px)
+
+            label
+                letter-spacing: 3px
+                font-size: .6rem
+                color: $n-smokeygrey
+                font-weight: $w-heavy
+
+            input
+                font-weight: $w-medium
+                font-family: inherit
+                font-size: 1.2rem
+                border: 1px solid $n-lightgrey
+                padding: 0 10%
+                border-radius: 10px
+                min-height: 50px
+                cursor: pointer
+
+    .card__separator
+        display: flex
+        flex-flow: column
+        justify-content: center
+        max-width: 100%
+        padding: 4vh 0
+
+        hr
+            background-color: $n-lightgrey
+
+        img
+            background-color: $p-purple
+            position: absolute
+            align-self: center
+            border-radius: 100%
+            cursor: pointer
+            scale: 50%
+            padding: 2rem
+
+        img:hover
+            background-color: $n-offblack
+                
+    .card__outputs
+        display: flex
+        flex-flow: column wrap
+
+        .output
+            display: flex
+            flex-flow: row
+            font-weight: $w-heavy
+            font-style: italic
+            margin-bottom: -1rem
+
+            label
+                order: 2
+                font-size: 3.2rem
+                padding-left: .5rem
+
+            p
+                order: 1
+                font-size: 3.2rem
+                color: $p-purple
+
+@media (min-width: 890px) 
+    
+    main
+        margin: 10% 20%
+
+    .card
+        border-radius: 1.5vw
+        border-bottom-right-radius: 10vw
+        padding: 7% 5%
+        width: 90%
+
+        .card__inputs
+            max-width: 70%
+            gap: 7%
+            margin-bottom: 5%
+
+            .input
+
+                label
+                    letter-spacing: 3px
+                    font-size: 0.8rem
+
+                input
+                    font-size: 1.8rem
+                    min-height: 100%
+        
+        .card__separator
+            display: flex
+            flex-flow: column
+            justify-content: center
+            max-width: 100%
+
+            img
+                scale: 80%
+                align-self: end
+
+            hr
+                width: 90%
+
+        .card__outputs
+
+            .output
+
+                label
+                    font-size: 5rem
+                    padding-left: .5rem
+
+                p
+                    order: 1
+                    font-size: 5rem
+                    color: $p-purple
